@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App Try</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>The Weather Search App</h1>
+      <h2>Find the weather in your city!</h2>
+    </header>
+    <main>
+      <section id="inputCity">
+        <form>
+          <label for="cityInput"
+            >What city weather are you interested in?</label
+          >
+          <input
+            type="text"
+            id="cityInput"
+            name="cityInput"
+            placeholder="Type your city"
+          />
+          <button id="checkWeatherInCity" type="submit">Check</button>
+        </form>
+      </section>
+      <section id="outputWeather">
+        <nav>
+          <ul>
+            <p>Period of Forecast</p>
+            <li>Today</li>
+            <li>3 days</li>
+            <li>5 days</li>
+            <li>10 days</li>
+          </ul>
+        </nav>
+        <ul>
+          <li id="cityOutput"></li>
+          <li id="cityTemperature"></li>
+          <li id="cityHumidity"></li>
+        </ul>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="assets/js/app.js" defer></script>
+  </body>
+</html>
